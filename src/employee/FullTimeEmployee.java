@@ -2,17 +2,13 @@ package employee;
 
 public class FullTimeEmployee extends Employee {
 
-    private double monthlySalary;
-
-    public FullTimeEmployee(String id, String name, Address address,
-                            Department department, double monthlySalary) {
-        super(id, name, address, department);
-        this.monthlySalary = monthlySalary;
+    public FullTimeEmployee(String id, String name, Address address, Department department, double salary) {
+        super(id, name, address, department, salary);
     }
 
     @Override
     public double calculateSalary() {
-        return monthlySalary;
+        return baseSalary;
     }
 
     @Override

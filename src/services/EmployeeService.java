@@ -9,14 +9,11 @@ public class EmployeeService {
     private final ArrayList<Employee> employees = new ArrayList<>();
 
     public void addEmployee(Employee e) {
-        if (findById(e.getId()) != null) {
-            throw new IllegalArgumentException("Duplicate ID: " + e.getId());
-        }
         employees.add(e);
     }
 
     public List<Employee> getAll() {
-        return new ArrayList<>(employees);
+        return employees;
     }
 
     public Employee findById(String id) {
@@ -24,5 +21,10 @@ public class EmployeeService {
             if (e.getId().equals(id)) return e;
         }
         return null;
+    }
+
+    // ✅ ADD THIS
+    public void deleteById(String id) {
+        employees.removeIf(e -> e.getId().equals(id));
     }
 }

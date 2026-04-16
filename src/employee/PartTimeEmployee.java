@@ -2,23 +2,28 @@ package employee;
 
 public class PartTimeEmployee extends Employee {
 
-    private double hourlyRate;
-    private int hoursWorked;
+    private int hours;
 
-    public PartTimeEmployee(String id, String name, Address address,
-                            Department department, double hourlyRate, int hoursWorked) {
-        super(id, name, address, department);
-        this.hourlyRate = hourlyRate;
-        this.hoursWorked = hoursWorked;
+    public PartTimeEmployee(String id, String name, Address address, Department department, double rate, int hours) {
+        super(id, name, address, department, rate * hours);
+        this.hours = hours;
     }
 
     @Override
     public double calculateSalary() {
-        return hourlyRate * hoursWorked;
+        return baseSalary;
     }
 
     @Override
     public String getType() {
         return "Part-Time";
+    }
+
+    public int getHours() {
+        return hours;
+    }
+
+    public void setHours(int hours) {
+        this.hours = hours;
     }
 }
