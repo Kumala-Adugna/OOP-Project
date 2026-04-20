@@ -36,27 +36,8 @@ The system supports multiple types of employees, including:
 
 
 
-## 📂 Project Structure
-OOP Project/
-│
-├── empl/
-│ ├── app/ → Main entry point
-│ │ └── Main.java
-│ ├── employee/ → Core employee classes
-│ │ ├── Employee.java
-│ │ ├── FullTimeEmployee.java
-│ │ ├── PartTimeEmployee.java
-│ │ ├── Intern.java
-│ │ ├── Address.java
-│ │ └── Department.java
-│ ├── interfaces/ → Interfaces
-│ │ └── Payable.java
-│ ├── services/ → Business logic
-│ │ └── EmployeeService.java
-│ └── gui/ → GUI implementation
-│ └── EmployeeManagementGUI.java
-│
-└── README.md
+## 📂 Project Structure(with image)
+![GUI Screenshot](Images/OOPproject.png)
 
 ---
 
