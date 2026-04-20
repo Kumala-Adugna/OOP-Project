@@ -1,21 +1,19 @@
 # 🧑‍💼 Employee Management System (Java OOP + GUI)
 
 ## 📌 Description
-This project is a simple **Employee Management System** developed using **Java Object-Oriented Programming (OOP)** concepts and **Swing GUI**.
+This project is a simple Employee Management System developed using Java Object-Oriented Programming (OOP) concepts and Swing GUI.
 
 It allows users to:
 - Add employees
 - View all employees
 - Search employees by ID
 - Handle different employee types
-
 ---
 
 ## 🏗️ Technologies Used
 - Java (OOP Concepts)
 - Java Swing (GUI)
 - ArrayList (Data Storage)
-
 ---
 
 ## 📂 Project Structure
@@ -77,6 +75,7 @@ Polymorphism
 Abstraction
 Encapsulation
 Interface implementation
+
 🚀 Future Improvements
 Add Update & Delete functionality
 Store data in file/database
