@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EmployeeManagementGUI",
+      "request": "launch",
+      "mainClass": "gui.EmployeeManagementGUI",
+      "projectName": "OOP Project_c697447b"
+    },
+    {
+      "type": "java",
       "name": "Run Main",
       "request": "launch",
       "mainClass": "app.Main"

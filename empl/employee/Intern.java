@@ -2,13 +2,17 @@ package employee;
 
 public class Intern extends Employee {
 
-    public Intern(String id, String name, Address address, Department department, double stipend) {
-        super(id, name, address, department, stipend);
+    private double stipend;
+
+    public Intern(String id, String name, Address address,
+                  Department department, double stipend) {
+        super(id, name, address, department, stipend );
+        this.stipend = stipend;
     }
 
     @Override
     public double calculateSalary() {
-        return baseSalary;
+        return stipend;
     }
 
     @Override
